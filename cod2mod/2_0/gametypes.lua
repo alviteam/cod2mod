@@ -1,0 +1,1 @@
+GAMETYPE = 'TDM'

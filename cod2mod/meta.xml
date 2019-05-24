@@ -1,0 +1,119 @@
+<meta>
+	<info name="COD2MOD 2.0.1" description="Call of Duty 2 Mod" version="2.0.1" author="bmat" type="gamemode" />
+
+	<include resource="scoreboard" />
+	<include resource="mapmanager" />
+	<include resource="helpmanager" />
+	<include resource="votemanager" />
+	<include resource="resourcemanager" />
+	<include resource="killmessages" />
+	<include resource="reload" />
+	<include resource="parachute" />
+	
+	<!-- Priority: library -->
+	<script src="lualib/functions.lua" type="server" />
+	<script src="lualib/functions.lua" type="client"/>
+	<script src="import/Font.lua" type="client" />
+
+	<!-- Priority: high -->
+	<script src="2_0/_init_s.lua" type="server" />
+	<script src="2_0/_init_c.lua" type="client" />
+	<script src="mods/mods.lua" type="client" />
+	
+	<!-- Priority: normal -->
+	<script src="gui/infobar.lua" type="client" />
+	<script src="gui/teamselector.lua" type="client" />
+	<script src="killstreak/server.lua" type="server" />
+	<script src="spawnprotector/server.lua" type="server" />
+	<script src="spawnprotector/client.lua" type="client" />
+	<script src="damage/server.lua" type="server" />
+	<script src="stats/server.lua" type="server" />
+
+	<!-- Priority: low -->
+	<script src="joinquit/server.lua" type="server" />
+
+
+
+	<script src="2_0/gametypes.lua" type="server" />
+	<script src="gametypes/dm.lua" type="server" />
+	<script src="gametypes/tdm.lua" type="server" />
+	<script src="gametypes/ctf.lua" type="server" />
+	
+	<script src="2_0/round_s.lua" type="server" />
+	<script src="2_0/round_c.lua" type="client" />
+	
+	<script src="2_0/performance.lua" type="client" />
+	<script src="2_0/scoreboard.lua" type="server" />
+	
+	<script src="2_0/killmessages_s.lua" type="server" />
+	<script src="2_0/killmessages_c.lua" type="client" />
+	<!-- <script src="2_0/playerstats.lua" type="server" /> -->
+	<!-- <script src="2_0/playerbox.lua" type="client" /> -->
+
+	
+	<script src="callFunction_s.lua" />
+	<script src="callFunction_c.lua" type="client" />
+
+	<script src="cod_server.lua" />
+	<script src="cod_client.lua" type="client" />
+	<script src="weapon_s.lua" />
+	<script src="weapon_c.lua" type="client" />
+
+	<!-- Include files -->
+	<file src="fonts/Calibri.ttf" />
+	<file src="fonts/SegoeUI.ttf" />
+
+	
+	<file src="mods/soldier_white.dff" />
+	<file src="mods/soldier_white.txd" />
+	<file src="mods/soldier_black.dff" />
+	<file src="mods/soldier_black.txd" />
+
+	<file src="images/cod2mod_logo.png" />
+	<file src="images/logo.png" />
+	<file src="images/logo2.png" />
+	<file src="images/c2m.png" />
+	<file src="images/icon.png" />
+	<file src="images/bg.png" />
+	<file src="images/highping.png" />
+	<file src="images/antiafk.png" />
+	<file src="images/default_avatar.png" />
+	
+	<file src="images/country-ussr.png" />
+	<file src="images/country-axis.png" />
+	<file src="images/grenade.png" />
+	<file src="images/smoke.png" />
+	
+	<file src="images/medicpack.png" />
+	<file src="images/bomb_ticker.png" />
+	<file src="images/bomb_ticker_frame.png" />
+	<file src="images/sd_clock.png" />
+	<file src="images/sd_needle.png" />
+	
+	<file src="txd/swat.txd" />
+	<file src="txd/goflagx.txd" />
+	<file src="txd/rcflagx.txd" />
+	<file src="txd/dyn_drugs.txd" />
+	
+	<file src="sounds/allies_win.wav" />
+	<file src="sounds/allies_elim.wav" />
+	<file src="sounds/axis_win.wav" />
+	<file src="sounds/axis_elim.wav" />
+	<file src="sounds/round_draw.wav" />
+	<file src="sounds/bomb_planted.wav" />
+	<file src="sounds/bomb_defused.wav" />
+	<file src="sounds/objective_destroyed.wav" />
+	<file src="sounds/flag_taken.wav" />
+	<file src="sounds/flag_dropped.wav" />
+	<file src="sounds/flag_returned.wav" />
+	<file src="sounds/flag_captured.wav" />
+	
+	<settings>
+		<setting name="cod2mod.fpslimit" value="[25]" />
+		<setting name="cod2mod.pinglimit" value="[150]" />
+		<setting name="cod2mod.votetime" value="[10]" />
+		<setting name="#cod2mod.tdm_scorelimit" value="[100]" />
+		<setting name="#cod2mod.tdm_roundtime" value="[900]" />
+		<setting name="#cod2mod.tdm_freezetime" value="[5]" />
+	</settings>
+</meta>
